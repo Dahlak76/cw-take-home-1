@@ -1,0 +1,23 @@
+{
+  "name": "cw-take-home-1",
+  "version": "1.0.0",
+  "description": "Code Willing Take-Home Assessment Part 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dahlak76/cw-take-home-1.git"
+  },
+  "author": "Dahlak Keleta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dahlak76/cw-take-home-1/issues"
+  },
+  "homepage": "https://github.com/Dahlak76/cw-take-home-1#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3"
+  }
+}
