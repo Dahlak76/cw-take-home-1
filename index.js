@@ -4,6 +4,7 @@ const { check, validationResult } = require("express-validator");
 const app = express();
 app.use(express.json());
 
+
 // Middleware for validating the request payload
 const validatePayload = [
   check("payload")
@@ -12,6 +13,8 @@ const validatePayload = [
     .isString()
     .withMessage("Payload must be a string")
 ];
+
+
 
 // Route for transforming the payload
 app.post("/transform", validatePayload, (req, res) => {
@@ -32,5 +35,5 @@ app.post("/transform", validatePayload, (req, res) => {
   res.status(200).json({ transformedPayload });
 });
 
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3006;
 app.listen(port, () => console.log(`Server running on port ${port}`));
