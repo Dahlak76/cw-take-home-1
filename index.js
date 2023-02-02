@@ -1,9 +1,15 @@
 const express = require("express");
+const cors = require('cors');
 const { check, validationResult } = require("express-validator");
 
 const app = express();
-app.use(express.json());
+// const allowedOrigins = ['http://localhost:3000'];
+// const options = {
+//   origin: allowedOrigins
+// };
 
+app.use(cors());
+app.use(express.json());
 
 // Middleware for validating the request payload
 const validatePayload = [
