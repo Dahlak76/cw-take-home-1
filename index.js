@@ -3,10 +3,6 @@ const cors = require('cors');
 const { check, validationResult } = require("express-validator");
 
 const app = express();
-// const allowedOrigins = ['http://localhost:3000'];
-// const options = {
-//   origin: allowedOrigins
-// };
 
 app.use(cors());
 app.use(express.json());
